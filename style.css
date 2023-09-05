@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(8, 6, 139);
+    letter-spacing: 1px;
+    margin: 30px 0;
+}
+
+.todo-list {
+    width: 450px;
+    padding: 2rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.todo-head {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+
+.entered-list {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+}
+
+.add-btn {
+    border: none;
+    border-radius: 5px;
+    background-color: #111;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.add-btn:hover {
+    background-color: rgb(8, 6, 139);
+
+}
+
+.tasks {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.item {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+    letter-spacing: 1px;
+}
+
+.item.completed p {
+    text-decoration: line-through;
+    color: #111180;
+}
+
+
+.item-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.item-btn i {
+    color: #111;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.item-btn i:hover {
+    color: rgb(8, 6, 139);
+}
